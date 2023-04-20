@@ -1,0 +1,213 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(./img/bgb.webp);
+    background-size: cover;
+
+    animation-name: bg-img3;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes bg-img3 {
+    0% {
+        background-image:url(./img/bgb.webp); 
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(./img/bggg.jpg);
+        background-size: cover;
+    }
+}
+
+
+.full {
+    position: relative;
+    width: 1050px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(50, 212, 212, 0.404);
+    border-radius: 10px;
+    padding: 0 50px;
+    border: 3px solid rgb(29, 124, 128);
+}
+
+.right {
+    width: 600px;
+    margin: auto;
+    padding: 30px;
+    padding-top: 100px;
+    height: 800px;
+    text-align: center;
+
+}
+
+.right .pic1,
+.pic2 {
+    width: 500px;
+    height: 300px;
+    margin-top: 65px;
+    border-radius: 10px;
+}
+
+.right .pic1 {
+    background-image: url(./img/usa.jpg);
+    background-size: cover;
+    animation-name: bg-img1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.right .pic2 {
+    background-image: url(./img/usa4.jpg);
+    background-size: cover;
+    animation-name: bg-img2;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
+}
+
+@keyframes bg-img1 {
+    0% {
+        background-image: url(./img/usa.jpg);
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url(./img/usa2.jpg);
+        background-size: cover;
+    }
+
+    70% {
+        background-image: url(./img/usa3.jpeg);
+        background-size: cover;
+    }
+}
+
+@keyframes bg-img2 {
+    0% {
+        background-image: url(./img/usa4.jpg);
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url(./img/usa5.jpg);
+        background-size: cover;
+    }
+
+    70% {
+        background-image: url(./img/usa6.webp);
+        background-size: cover;
+    }
+}
+
+#container {
+    /* position: relative; */
+    margin: 20px auto;
+    padding: 30px;
+    padding-top: 180px;
+    width: 400px;
+    height: 800px;
+    text-align: center;
+    /* border: 1px solid #444; */
+}
+
+form {}
+
+h1 {
+    padding-bottom: 30px;
+    position: absolute;
+    font-size: 40px;
+    top: 47px;
+    left: 443px;
+}
+
+.box {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+.box input,
+select {
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #4444449f;
+    color: #fff;
+    border-style: none;
+
+
+}
+
+.box:nth-child(7) input {
+    width: 64px;
+    height: 28px;
+    background-color: blue;
+}
+
+.radio {
+    margin-bottom: 20px;
+}
+
+.box input::placeholder {
+    padding: 0 10px;
+    color: #999;
+}
+
+.box label {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+textarea {
+    height: 90px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #4444449f;
+    color: #fff;
+
+}
+
+button {
+    position: absolute;
+    top: 914px;
+    left: 513px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 40px;
+    border-radius: 5px;
+    background-color: rgba(88, 88, 114, 0.644);
+    box-shadow: 0 0 10px black;
+    border: 1px solid rgba(0, 0, 255, 0.336);
+
+}
+
+button:hover {
+    background-image: url(./img/maxresdefault.jpg);
+    background-size: cover;
+    color: #ffd000;
+    font-size: 20px;
+    box-shadow: 0 0 10px 10px black;
+    transform: scale(1.09);
+
+
+}
+
+button:active {
+    transform: scale(0.9);
+
+}
